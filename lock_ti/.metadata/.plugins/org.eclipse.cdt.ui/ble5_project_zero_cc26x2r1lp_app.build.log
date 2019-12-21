@@ -1,0 +1,8 @@
+
+**** Build of configuration FlashROM_Debug for project ble5_project_zero_cc26x2r1lp_app ****
+
+/home/ntuee/ti/ccs910/ccs/utils/bin/gmake -k -j 4 all -O 
+ 
+gmake[1]: 'ble5_project_zero_cc26x2r1lp_app_FlashROM_Debug.out' is up to date.
+
+**** Build Finished ****

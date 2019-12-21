@@ -1,0 +1,23 @@
+
+**** Build of configuration FlashROM_Library for project ble5_project_zero_cc26x2r1lp_stack_library ****
+
+/home/ntuee/ti/ccs910/ccs/utils/bin/gmake -k -j 4 all -O 
+ 
+/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/../../../tools/ble5stack/lib_search/lib_search         --opt /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_stack_library/TOOLS/build_config.opt         --lib-dir /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1         --cmd /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_stack_library/FlashROM_Library/lib_linker.cmd         --xml /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/../../../tools/ble5stack/lib_search/lib_search.xml         --sym-dir /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/symbols/cc26x2r1
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/ctrl/hci_pxxx.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/ctrl/ll_pxxx.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/hci_tl/hci_tl_none.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/host/smp_pxxx_coc.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/host/att_pxxx_coc.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/host/l2cap_pxxx_coc.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/host/profiles_pxxx_coc.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/host/gap_pxxx_coc.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/host/sm_pxxx_coc.a >>>
+<<< Using library: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/blelib/cc26x2r1/host/gatt_pxxx_coc.a >>>
+<<< Not modifying lib_linker.cmd. Stack configurations have not changed. >>>
+ 
+<<< Using pxxx_coc.symbols >>>
+ 
+gmake[1]: Nothing to be done for 'main-build'.
+
+**** Build Finished ****

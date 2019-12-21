@@ -1,0 +1,8 @@
+
+**** Build of configuration Release_unsecure for project cc26x2r1lp_bim_offchip ****
+
+/home/ntuee/ti/ccs910/ccs/utils/bin/gmake -k -j 4 all -O 
+ 
+gmake[1]: 'cc26x2r1lp_bim_offchip.out' is up to date.
+
+**** Build Finished ****

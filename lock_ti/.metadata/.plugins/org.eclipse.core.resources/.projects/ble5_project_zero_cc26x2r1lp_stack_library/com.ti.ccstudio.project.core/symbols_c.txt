@@ -1,0 +1,125 @@
+#define __unsigned_chars__ 1	/* Predefined */
+#define __PRAGMA_REDEFINE_EXTNAME 1	/* Predefined */
+#define __DATE__ "Dec 21 2019"	/* Predefined */
+#define __TIME__ "22:51:29"	/* Predefined */
+#define __STDC__ 1	/* Predefined */
+#define __STDC_VERSION__ 199901L	/* Predefined */
+#define __STDC_HOSTED__ 1	/* Predefined */
+#define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */
+#define __STDC_NO_THREADS__ 1	/* Predefined */
+#define __edg_front_end__ 1	/* Predefined */
+#define __EDG_VERSION__ 413	/* Predefined */
+#define __EDG_SIZE_TYPE__ unsigned int	/* Predefined */
+#define __EDG_PTRDIFF_TYPE__ int	/* Predefined */
+#define __VERSION__ "EDG gcc 4.8 mode"	/* Predefined */
+#define __CHAR16_TYPE__ unsigned short	/* Predefined */
+#define __CHAR32_TYPE__ unsigned int	/* Predefined */
+#define __TI_COMPILER_VERSION__ 18012002	/* Predefined */
+#define __COMPILER_VERSION__ 18012002	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL_ID__ 19101	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	/* Predefined */
+#define __TMS470__ 1	/* Predefined */
+#define __TI_ARM__ 1	/* Predefined */
+#define __16bis__ 1	/* Predefined */
+#define __eabi__ 1	/* Predefined */
+#define __TI_EABI_SUPPORT__ 1	/* Predefined */
+#define __TI_FPV4SPD16_SUPPORT__ 1	/* Predefined */
+#define __TI_FPv4SPD16_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP 6	/* Predefined */
+#define __ARM_FEATURE_FMA 1	/* Predefined */
+#define __TI_VFP_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP16_ARGS 1	/* Predefined */
+#define __ARM_FP16_FORMAT_IEEE 1	/* Predefined */
+#define __ARM_PCS_VFP 1	/* Predefined */
+#define __TI_TMS470_V7__ 1	/* Predefined */
+#define __TI_ARM_V7__ 1	/* Predefined */
+#define __ARM_32BIT_STATE 1	/* Predefined */
+#define __ARM_ARCH 7	/* Predefined */
+#define __ARM_ARCH_ISA_THUMB 2	/* Predefined */
+#define __ARM_FEATURE_CLZ 1	/* Predefined */
+#define __ARM_FEATURE_SAT 1	/* Predefined */
+#define __ARM_FEATURE_UNALIGNED 1	/* Predefined */
+#define __ARM_FEATURE_LDREX 7	/* Predefined */
+#define __TI_TMS470_V7M4__ 1	/* Predefined */
+#define __TI_ARM_V7M4__ 1	/* Predefined */
+#define __ARM_ARCH_PROFILE 77	/* Predefined */
+#define __ARM_ACLE 200	/* Predefined */
+#define __ARM_PCS 1	/* Predefined */
+#define __ARM_FEATURE_DSP 1	/* Predefined */
+#define __ARM_FEATURE_SIMD32 1	/* Predefined */
+#define __SIZE_T_TYPE__ unsigned	/* Predefined */
+#define __PTRDIFF_T_TYPE__ int	/* Predefined */
+#define __ARM_SIZEOF_MINIMAL_ENUM 1	/* Predefined */
+#define __WCHAR_T_TYPE__ unsigned short	/* Predefined */
+#define __ARM_SIZEOF_WCHAR_T 2	/* Predefined */
+#define __TI_EABI__ 1	/* Predefined */
+#define __ELF__ 1	/* Predefined */
+#define __little_endian__ 1	/* Predefined */
+#define __LITTLE_ENDIAN__ 1	/* Predefined */
+#define __TI_STRICT_ANSI_MODE__ 0	/* Predefined */
+#define __TI_WCHAR_T_BITS__ 16	/* Predefined */
+#define __TI_GNU_ATTRIBUTE_SUPPORT__ 1	/* Predefined */
+#define __TI_STRICT_FP_MODE__ 1	/* Predefined */
+#define __CHAR_BIT__ 8	/* Predefined */
+#define __SCHAR_MAX__ 127	/* Predefined */
+#define __SHRT_MAX__ 32767	/* Predefined */
+#define __INT_MAX__ 2147483647	/* Predefined */
+#define __LONG_MAX__ 2147483647	/* Predefined */
+#define __LONG_LONG_MAX__ 9223372036854775807	/* Predefined */
+#define __SIZEOF_INT__ 4	/* Predefined */
+#define __SIZEOF_SHORT__ 2	/* Predefined */
+#define __SIZEOF_LONG__ 4	/* Predefined */
+#define __SIZEOF_LONG_LONG__ 8	/* Predefined */
+#define __SIZEOF_WCHAR_T__ 2	/* Predefined */
+#define __SIZEOF_FLOAT__ 4	/* Predefined */
+#define __SIZEOF_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_LONG_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_SIZE_T__ 4	/* Predefined */
+#define __SIZEOF_WINT_T__ 2	/* Predefined */
+#define __SIZEOF_PTRDIFF_T__ 4	/* Predefined */
+#define CC26X2 1
+#define CC26X2R1_LAUNCHXL 1
+#define CC26XX 1
+#define DeviceFamily_CC26X2 1
+#define EXT_HAL_ASSERT 1
+#define FLASH_ONLY_BUILD 1
+#define ICALL_EVENTS 1
+#define ICALL_JT 1
+#define ICALL_LITE 1
+#define OSAL_CBTIMER_NUM_TASKS 1
+#define POWER_SAVING 1
+#define STACK_LIBRARY 1
+#define USE_ICALL 1
+#define NVSSPI 1
+#define BROADCASTER_CFG 0x01
+#define OBSERVER_CFG 0x02
+#define PERIPHERAL_CFG 0x04
+#define CENTRAL_CFG 0x08
+#define ADV_NCONN_CFG 0x01
+#define ADV_CONN_CFG 0x02
+#define SCAN_CFG 0x04
+#define INIT_CFG 0x08
+#define ADV_CFG ADV_NCONN_CFG+ADV_CONN_CFG
+#define LINK_CFG ADV_CONN_CFG+INIT_CFG
+#define FULL_CFG INIT_CFG+SCAN_CFG+ADV_NCONN_CFG+ADV_CONN_CFG
+#define L2CAP_COC_CFG 0x80
+#define HOST_V41_MASK 0x80
+#define CTRL_V41_MASK 0x7F
+#define SCAN_REQ_RPT_CFG 0x02
+#define PHY_2MBPS_CFG 0x01
+#define PHY_LR_CFG 0x02
+#define HDC_NC_ADV_CFG 0x04
+#define AE_CFG 0x08
+#define PERIODIC_ADV_CFG 0x10
+#define AOA_AOD_CFG 0x20
+#define CHAN_ALGO2_CFG 0x40
+#define BLE_V41_FEATURES V41_FEATURES
+#define BLE_V42_FEATURES V42_FEATURES
+#define BLE_V50_FEATURES V50_FEATURES+PHY_2MBPS_CFG+HDC_NC_ADV_CFG+CHAN_ALGO2_CFG+PHY_LR_CFG+AE_CFG
+#define BLE_VS_FEATURES SCAN_REQ_RPT_CFG
+#define HOST_CONFIG PERIPHERAL_CFG
+#define GAP_BOND_MGR 1
+#define V41_FEATURES L2CAP_COC_CFG
+#define HCI_TL_NONE 1
+#define _OPTIMIZE_FOR_SPACE 1
+#define _INLINE 1

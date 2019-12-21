@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="9.1.0"/>
+	<deviceVariant value="Cortex M.CC2642R1F"/>
+	<deviceFamily value="TMS470"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="18.12.2.LTS"/>
+	<isElfFormat value="true"/>
+	<connection value="common/targetdb/connections/TIXDS110_Connection.xml"/>
+	<linkerCommandFile value="bim_cc26x2_cc13x2.cmd"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=cc26x2r1lp_bim_offchip.projectspec.cc26x2r1lp_bim_offchip,products=,xdcToolsVersion=3.50.08.24_core,target=ti.targets.arm.elf.M4F,platform=ti.platforms.simplelink:CC2642R1F,buildProfile=Release_unsecure,isHybrid=true,configuroOptions=--compileOptions ${COMPILER_FLAGS}"/>
+	<origin value="/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/examples/nortos/CC26X2R1_LAUNCHXL/common/bim/nortos/ccs/cc26x2r1lp_bim_offchip.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>
