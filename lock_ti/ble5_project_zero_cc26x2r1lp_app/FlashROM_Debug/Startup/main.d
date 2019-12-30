@@ -171,9 +171,15 @@ Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/bcomdef.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/osal/src/inc/comdef.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h
-Startup/main.obj: /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h
+Startup/main.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/knl/Queue.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/drivers/PIN.h
+Startup/main.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h
+Startup/main.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/CC26X2R1_LAUNCHXL.h
+Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/ioc.h
+Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_ioc.h
+Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h
+Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_gpio.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/icall/inc/ble_user_config.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/icall/src/inc/icall_user_config.h
 Startup/main.obj: /home/ntuee/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdlib.h
@@ -192,11 +198,6 @@ Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/board.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/./cc2652r1lp/cc2642r1lp_board.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/./cc2652r1lp/../../boards/CC26X2R1_LAUNCHXL/Board.h
-Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/./cc2652r1lp/../../boards/CC26X2R1_LAUNCHXL/CC26X2R1_LAUNCHXL.h
-Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/ioc.h
-Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_ioc.h
-Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h
-Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_gpio.h
 
 ../Startup/main.c: 
 /home/ntuee/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdint.h: 
@@ -369,9 +370,15 @@ Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devi
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/bcomdef.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/osal/src/inc/comdef.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h: 
-/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/knl/Queue.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/drivers/PIN.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/CC26X2R1_LAUNCHXL.h: 
+/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/ioc.h: 
+/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_ioc.h: 
+/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h: 
+/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_gpio.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/icall/inc/ble_user_config.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/icall/src/inc/icall_user_config.h: 
 /home/ntuee/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/stdlib.h: 
@@ -390,8 +397,3 @@ Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devi
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/board.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/./cc2652r1lp/cc2642r1lp_board.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/./cc2652r1lp/../../boards/CC26X2R1_LAUNCHXL/Board.h: 
-/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/target/./cc2652r1lp/../../boards/CC26X2R1_LAUNCHXL/CC26X2R1_LAUNCHXL.h: 
-/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/ioc.h: 
-/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_ioc.h: 
-/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h: 
-/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_gpio.h: 

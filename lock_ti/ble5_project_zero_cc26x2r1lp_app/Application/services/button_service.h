@@ -58,7 +58,7 @@ extern "C"
  * INCLUDES
  */
 #include <bcomdef.h>
-
+#include "project_zero.h"
 /*********************************************************************
  * CONSTANTS
  */

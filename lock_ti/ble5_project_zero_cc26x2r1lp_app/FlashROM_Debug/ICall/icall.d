@@ -211,7 +211,7 @@ ICall/icall.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/p
 ICall/icall.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/BIOS.h
 ICall/icall.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
 ICall/icall.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/cfg/global.h
-ICall/icall.obj: /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f.h
+ICall/icall.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f.h
 ICall/icall.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/heaps/HeapTrack.h
 ICall/icall.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Types.h
 ICall/icall.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IInstance.h
@@ -506,7 +506,7 @@ ICall/icall.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/pa
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/BIOS.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/cfg/global.h: 
-/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/heaps/HeapTrack.h: 
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Types.h: 
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IInstance.h: 

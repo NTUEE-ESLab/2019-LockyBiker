@@ -78,13 +78,23 @@
 /*********************************************************************
  * GLOBAL VARIABLES
  */
+
 volatile extern enum bles BLE_State;
 volatile extern enum reg Register_State;
 volatile extern enum con Connection_State;
 volatile extern enum lock Lock_State;
 volatile extern char BLE_PASSWORD[16];
+//extern PIN_State SpeakerPinState;
+//extern PIN_Handle SpeakerPinHandle;
 char BLE_CIPHER[16];
 char BLE_GUESS[16];
+PIN_Handle SpeakerPinHandle;
+PIN_Config SpeakerPinTable[] = {
+    Board_DIO22 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
+};
+
+
+
 // Data_Service Service UUID
 CONST uint8_t DataServiceUUID[ATT_UUID_SIZE] =
 {
@@ -542,6 +552,7 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
             {
 
 //                srand(time(0));
+                PIN_setOutputValue(SpeakerPinHandle, Board_DIO22, 0);
                 char message[16];
                 unsigned int a[4];
                 a[0] = 666666666;
@@ -559,7 +570,7 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
                     }
 
                 }
-//                strncpy(BLE_PASSWORD, "qqqqqqqqqqqqqqqq", 16);
+                memcpy(BLE_PASSWORD, "aaaaaaaaaaaaaaaa", 16);
                 encrypt(message, BLE_PASSWORD);
                 *pLen = 16;
                 memcpy(pValue, message, *pLen);
@@ -623,8 +634,8 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
     uint16_t writeLenMin;
     uint16_t writeLenMax;
     uint16_t *pValueLenVar;
-
-
+    static bool shout = true;
+    static bool lock = false;
 //    uint8_t button_values = 0;
     // See if request is regarding a Client Characterisic Configuration
     if(ATT_BT_UUID_SIZE == pAttr->type.len && GATT_CLIENT_CHAR_CFG_UUID ==
@@ -729,17 +740,20 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
         ////IDLE STATE
         if(BLE_State == IDLES)
         {
-
-            *(pValue + 7) = '\0';
-            if(strcmp(pValue,"fuckyou") == 0)
+//            *(pValue + 7) = '\0';
+            if(strncmp(pValue,"fuckyou", 7) == 0)
             {
                 BLE_State = REGISTER;
                 Register_State = WAIT_BUTTON;
             }
-            else if(strcmp(pValue,"rockyou") == 0)
+            else if(strncmp(pValue,"rockyou", 7) == 0)
             {
                 BLE_State = CONNECTION;
                 Connection_State = SEND_CIPHER;
+            }
+            else
+            {
+                BLE_State == IDLES;
             }
         }
         ////REGISTER_STATE
@@ -787,19 +801,39 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
             }
             if(Connection_State == WAIT_INSTRUCTION)
             {
-                char instruction[1];
-                memcpy(instruction, pValue, 1);
-                if(strncmp(instruction, "0", 1)) /// LOCK
+//                char instruction[1];
+//                memcpy(instruction, pValue, 1);
+                if(pValue[0] == '0') /// LOCK
                 {
-                    ////lock the lock
-                }
-                else if (strncmp(instruction, "1", 1)) /// unlock
-                {
-                    ////unlock the lock
+
+                    if (lock)
+                    {
+
+                        ////lock the lock
+                        lock = false;
+                    }
+                    else
+                    {
+                        ////unlock the lock
+                        lock = true;
+                    }
+
                 }
                 else /// shout
                 {
                     ////shout out
+                    if (shout)
+                    {
+
+                        SpeakerPinHandle = PIN_open(&SpeakerPinState, SpeakerPinTable);
+                        shout = false;
+                    }
+                    else
+                    {
+                        PIN_close(SpeakerPinHandle);
+                        shout = true;
+                    }
+
                 }
                 Connection_State = RESPONSE_INSTRUCTION;
             }

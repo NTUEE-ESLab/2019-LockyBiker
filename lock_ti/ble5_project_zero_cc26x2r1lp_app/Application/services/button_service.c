@@ -59,7 +59,7 @@
 #include "icall_ble_api.h"
 
 #include "button_service.h"
-#include "project_zero.h"
+
 /*********************************************************************
  * MACROS
  */

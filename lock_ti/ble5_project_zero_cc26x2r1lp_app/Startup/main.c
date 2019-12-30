@@ -78,7 +78,8 @@ icall_userCfg_t user0Cfg = BLE_USER_CFG;
 volatile extern enum bles BLE_State;
 volatile extern enum lock Lock_State;
 volatile extern enum reg Register_State;
-
+extern PIN_Handle SpeakerPinHandle;
+extern PIN_Config SpeakerPinTable[];
 
 
 
@@ -130,14 +131,15 @@ extern void AssertHandler(uint8_t assertCause,
 int main()
 {
   /* Register Application callback to trap asserts raised in the Stack */
-  RegisterAssertCback(AssertHandler);
-
+        RegisterAssertCback(AssertHandler);
   Board_initGeneral();
 
   BLE_State = IDLES;
   Lock_State = UNLOCK;
   Register_State = WAIT_HELLO;
 
+
+//  PIN_setOutputValue(SpeakerPinHandle, Board_DIO22, GPIO_DOWN);
 #if !defined( POWER_SAVING )
   /* Set constraints for Standby, powerdown and idle mode */
   // PowerCC26XX_SB_DISALLOW may be redundant

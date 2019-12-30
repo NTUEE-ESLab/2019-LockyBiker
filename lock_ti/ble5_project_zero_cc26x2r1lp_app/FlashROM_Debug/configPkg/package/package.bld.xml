@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/ble_debug_pem4f.c"/>
     </sources>
     <configscripts>
-        <srcFile name="/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg"/>
+        <srcFile name="/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/ble_debug_pem4f.cfg"
         xCfgPrefix="package/cfg/ble_debug_pem4f"
-        cfgScript="/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg"
+        cfgScript="/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/ble_debug_pem4f.cfg"
         xCfgPrefix="package/cfg/ble_debug_pem4f"
-        cfgScript="/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg"
+        cfgScript="/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg"
         cfgArgs="null"
         />
     </executables>

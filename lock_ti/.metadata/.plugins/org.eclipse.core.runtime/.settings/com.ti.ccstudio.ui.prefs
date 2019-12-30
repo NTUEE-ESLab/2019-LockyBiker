@@ -1,6 +1,6 @@
-CCStudioUIStartup.CCS_IMAGE_INFO=/home/ntuee/lock_ti|/home/ntuee/ti/ccs910/ccs|9.1.0.00010
+CCStudioUIStartup.CCS_IMAGE_INFO=/home/ntuee/Lock_CC26X2R1/lock_ti|/home/ntuee/ti/ccs910/ccs|9.1.0.00010
 com.ti.ccstudio.ui.CCS_INSTALL_LOCATION=/home/ntuee/ti/ccs910/ccs
 com.ti.ccstudio.ui.CCS_VERSION=9.1.0.00010
-com.ti.ccstudio.ui.CCS_WORKSPACE_LOCATION=/home/ntuee/lock_ti
+com.ti.ccstudio.ui.CCS_WORKSPACE_LOCATION=/home/ntuee/Lock_CC26X2R1/lock_ti
 com.ti.ccstudio.ui.IS_NOT_FIRST_CCS_LAUNCH=true
 eclipse.preferences.version=1

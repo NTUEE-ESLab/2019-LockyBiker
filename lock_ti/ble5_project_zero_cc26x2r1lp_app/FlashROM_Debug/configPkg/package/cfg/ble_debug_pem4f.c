@@ -1992,7 +1992,7 @@ __FAR__ const xdc_SizeT ti_sysbios_knl_Task_Module_State_terminatedQ__O = offset
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f");
+xdc__META(__ASM__, "@(#)__ASM__ = /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f");
 
 /*
  *  ======== __ISA__ ========

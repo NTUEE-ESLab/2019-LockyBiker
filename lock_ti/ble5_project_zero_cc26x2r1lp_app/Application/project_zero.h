@@ -61,10 +61,12 @@ extern "C"
 #include <ti/drivers/PIN.h>
 
 #include <bcomdef.h>
-
+#include <Board.h>
 /*********************************************************************
  *  EXTERNAL VARIABLES
  */
+#define GPIO_UP 512
+#define GPIO_DOWN 0
 
 enum lock { LOCK, UNLOCK };
 enum reg { WAIT_HELLO, CALL_BUTTON, WAIT_BUTTON, RESPONSE_HELLO, WAIT_PASSWORD, RESPONSE_PASSWORD };
@@ -75,6 +77,11 @@ volatile enum bles BLE_State;
 volatile enum lock Lock_State;
 volatile enum reg Register_State;
 volatile enum con Connection_State;
+PIN_State SpeakerPinState;
+//PIN_Handle SpeakerPinHandle;
+//PIN_Config SpeakerPinTable[] = {
+//    Board_DIO22 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
+//};
 /*********************************************************************
  * CONSTANTS
  */

@@ -56,7 +56,7 @@ Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/controller/cc26xx/inc/ll_scheduler.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/linkdb_internal.h
-Application/services/button_service.obj: /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/Include/gapbondmgr.h
+Application/services/button_service.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Include/gapbondmgr.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/sm.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/controller/cc26xx/inc/ll_ae.h
@@ -95,13 +95,13 @@ Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_gpio.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/l2cap.h
-Application/services/button_service.obj: /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_uuid.h
+Application/services/button_service.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_uuid.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap_advertiser.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap_scanner.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap_initiator.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gatt.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/att.h
-Application/services/button_service.obj: /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_profile_uuid.h
+Application/services/button_service.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_profile_uuid.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gattservapp.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/osal/src/inc/osal_snv.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h
@@ -122,7 +122,7 @@ Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/TRNGCC26XX.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/icall/inc/icall_api_idx.h
 Application/services/button_service.obj: ../Application/services/button_service.h
-Application/services/button_service.obj: /home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h
+Application/services/button_service.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h
 Application/services/button_service.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/knl/Queue.h
 Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/xdc.h
 Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Types.h
@@ -166,6 +166,7 @@ Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core
 Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IInstance.h
 Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IHeap.h
 Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Error.h
+Application/services/button_service.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h
 
 ../Application/services/button_service.c: 
 /home/ntuee/ti/ccs910/ccs/tools/compiler/ti-cgt-arm_18.12.2.LTS/include/string.h: 
@@ -223,7 +224,7 @@ Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/controller/cc26xx/inc/ll_scheduler.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/linkdb_internal.h: 
-/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/Include/gapbondmgr.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Include/gapbondmgr.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/sm.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/controller/cc26xx/inc/ll_ae.h: 
@@ -262,13 +263,13 @@ Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_gpio.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/l2cap.h: 
-/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_uuid.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_uuid.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap_advertiser.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap_scanner.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gap_initiator.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gatt.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/att.h: 
-/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_profile_uuid.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/PROFILES/gatt_profile_uuid.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/gattservapp.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/osal/src/inc/osal_snv.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h: 
@@ -289,7 +290,7 @@ Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/TRNGCC26XX.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/icall/inc/icall_api_idx.h: 
 ../Application/services/button_service.h: 
-/home/ntuee/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/knl/Queue.h: 
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/xdc.h: 
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Types.h: 
@@ -333,3 +334,4 @@ Application/services/button_service.obj: /home/ntuee/ti/xdctools_3_50_08_24_core
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IInstance.h: 
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/IHeap.h: 
 /home/ntuee/ti/xdctools_3_50_08_24_core/packages/xdc/runtime/Error.h: 
+/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h: 
