@@ -91,7 +91,7 @@
 
 #include <project_zero.h>
 #include <util.h>
-
+#include "gap.h"
 /*********************************************************************
  * MACROS
  */
@@ -285,7 +285,6 @@ static Queue_Handle appMsgQueueHandle;
 
 // GAP GATT Attributes
 static uint8_t attDeviceName[GAP_DEVICE_NAME_LEN] = "Project Zero";
-
 // Advertisement data
 static uint8_t advertData[] =
 {
@@ -586,7 +585,7 @@ static void ProjectZero_init(void)
     // Register the current thread as an ICall dispatcher application
     // so that the application can send and receive messages.
     ICall_registerApp(&selfEntity, &syncEvent);
-
+    MotorPinHandle = PIN_open(&MotorPinState, MotorPinTable);
     // Initialize queue for application messages.
     // Note: Used to transfer control to application thread from e.g. interrupts.
     Queue_construct(&appMsgQueue, NULL);
@@ -789,7 +788,6 @@ static void ProjectZero_taskFxn(UArg a0, UArg a1)
     for(;; )
     {
         uint32_t events;
-
         // Waits for an event to be posted associated with the calling thread.
         // Note that an event associated with a thread is posted when a
         // message is queued to the message receive queue of the thread
@@ -905,6 +903,12 @@ static void ProjectZero_taskFxn(UArg a0, UArg a1)
                 L2CAP_RegisterFlowCtrlTask(selfEntity);
             }
         }
+        if(GAP_NumActiveConnections() == 0)
+        {
+            lock = false;
+            PIN_close(MotorPinHandle);
+        }
+
     }
 }
 

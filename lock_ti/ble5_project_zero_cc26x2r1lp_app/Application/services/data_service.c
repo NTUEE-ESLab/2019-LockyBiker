@@ -63,6 +63,7 @@
 #include "data_service.h"
 #include "project_zero.h"
 #include "AES.h"
+
 /*********************************************************************
  * MACROS
  */
@@ -84,14 +85,21 @@ volatile extern enum reg Register_State;
 volatile extern enum con Connection_State;
 volatile extern enum lock Lock_State;
 volatile extern char BLE_PASSWORD[16];
-//extern PIN_State SpeakerPinState;
-//extern PIN_Handle SpeakerPinHandle;
+bool lock = false;
+PIN_Handle MotorPinHandle;
+PIN_Config MotorPinTable[] = {
+    Board_DIO21 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
+};
 char BLE_CIPHER[16];
 char BLE_GUESS[16];
 PIN_Handle SpeakerPinHandle;
 PIN_Config SpeakerPinTable[] = {
     Board_DIO22 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
 };
+//PIN_Handle MotorPinHandle;
+//PIN_Config MotorPinTable[] = {
+//    Board_DIO21 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
+//};
 
 
 
@@ -469,6 +477,7 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
     uint16_t valueLen;
     uint8_t paramID = 0xFF;
     // Find settings for the characteristic to be read.
+
     paramID = Data_Service_findCharParamId(pAttr);
     switch(paramID)
     {
@@ -635,9 +644,10 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
     uint16_t writeLenMax;
     uint16_t *pValueLenVar;
     static bool shout = true;
-    static bool lock = false;
+
 //    uint8_t button_values = 0;
     // See if request is regarding a Client Characterisic Configuration
+
     if(ATT_BT_UUID_SIZE == pAttr->type.len && GATT_CLIENT_CHAR_CFG_UUID ==
        *(uint16_t *)pAttr->type.uuid)
     {
@@ -810,11 +820,13 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
                     {
 
                         ////lock the lock
+                        PIN_close(MotorPinHandle);
                         lock = false;
                     }
                     else
                     {
                         ////unlock the lock
+                        MotorPinHandle = PIN_open(&MotorPinState, MotorPinTable);
                         lock = true;
                     }
 

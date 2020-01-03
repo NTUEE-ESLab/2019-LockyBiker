@@ -62,6 +62,12 @@ extern "C"
 
 #include <bcomdef.h>
 #include <Board.h>
+#include <stdbool.h>
+#include "bcomdef.h"
+#include "osal.h"
+#include "sm.h"
+#include "ll_ae.h"
+
 /*********************************************************************
  *  EXTERNAL VARIABLES
  */
@@ -78,10 +84,18 @@ volatile enum lock Lock_State;
 volatile enum reg Register_State;
 volatile enum con Connection_State;
 PIN_State SpeakerPinState;
+PIN_State MotorPinState;
 //PIN_Handle SpeakerPinHandle;
 //PIN_Config SpeakerPinTable[] = {
 //    Board_DIO22 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
 //};
+extern PIN_Handle MotorPinHandle;
+extern PIN_Config MotorPinTable[];
+extern bool lock;
+//= {
+//    Board_DIO21 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
+//};
+
 /*********************************************************************
  * CONSTANTS
  */
@@ -102,7 +116,6 @@ PIN_State SpeakerPinState;
  * Task creation function for the Project Zero.
  */
 extern void ProjectZero_createTask(void);
-
 /*********************************************************************
 *********************************************************************/
 
