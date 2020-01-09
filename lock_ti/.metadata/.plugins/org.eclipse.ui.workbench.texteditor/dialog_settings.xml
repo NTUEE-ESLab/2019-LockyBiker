@@ -2,25 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="BLE" key="selection"/>
+		<item value="init" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="init"/>
+			<item value="Motor"/>
+			<item value="ProjectZero_t"/>
+			<item value="tax"/>
+			<item value="taxt"/>
+			<item value="Pin"/>
+			<item value="gap_nu"/>
+			<item value="icall_ble_api.h"/>
+			<item value="GAP_NumActiveConnections"/>
+			<item value="gap_num"/>
 			<item value="BLE"/>
 			<item value="for"/>
 			<item value="while"/>
 			<item value="SpeakerPinState"/>
 			<item value="strcmp"/>
-			<item value="speaker"/>
-			<item value="init"/>
-			<item value="SpeakerPinTable"/>
-			<item value="led"/>
-			<item value="dataservice"/>
-			<item value="setoutputvalue"/>
-			<item value="ProjectZero_init"/>
-			<item value="ledPinHandle"/>
 		</list>
 		<list key="replacehistory">
 		</list>

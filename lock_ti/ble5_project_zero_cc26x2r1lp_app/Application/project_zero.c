@@ -586,6 +586,10 @@ static void ProjectZero_init(void)
     // so that the application can send and receive messages.
     ICall_registerApp(&selfEntity, &syncEvent);
     MotorPinHandle = PIN_open(&MotorPinState, MotorPinTable);
+    SpeakerPinHandle = PIN_open(&SpeakerPinState, SpeakerPinTable);
+    lock_init = true;
+    lock = true;
+    shout = true;
     // Initialize queue for application messages.
     // Note: Used to transfer control to application thread from e.g. interrupts.
     Queue_construct(&appMsgQueue, NULL);
@@ -903,10 +907,19 @@ static void ProjectZero_taskFxn(UArg a0, UArg a1)
                 L2CAP_RegisterFlowCtrlTask(selfEntity);
             }
         }
+
         if(GAP_NumActiveConnections() == 0)
         {
-            lock = false;
-            PIN_close(MotorPinHandle);
+
+            if(!lock_init)
+            {
+                PIN_close(MotorPinHandle);
+                lock = false;
+            }
+            else
+                lock = true;
+            PIN_close(SpeakerPinHandle);
+            shout = true;
         }
 
     }

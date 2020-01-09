@@ -85,7 +85,10 @@ volatile extern enum reg Register_State;
 volatile extern enum con Connection_State;
 volatile extern enum lock Lock_State;
 volatile extern char BLE_PASSWORD[16];
-bool lock = false;
+bool lock_init;
+bool lock;
+bool shout;
+long unsigned int seed;
 PIN_Handle MotorPinHandle;
 PIN_Config MotorPinTable[] = {
     Board_DIO21 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
@@ -94,7 +97,7 @@ char BLE_CIPHER[16];
 char BLE_GUESS[16];
 PIN_Handle SpeakerPinHandle;
 PIN_Config SpeakerPinTable[] = {
-    Board_DIO22 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
+    Board_DIO15 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
 };
 //PIN_Handle MotorPinHandle;
 //PIN_Config MotorPinTable[] = {
@@ -477,7 +480,7 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
     uint16_t valueLen;
     uint8_t paramID = 0xFF;
     // Find settings for the characteristic to be read.
-
+    long double tmp;
     paramID = Data_Service_findCharParamId(pAttr);
     switch(paramID)
     {
@@ -545,6 +548,7 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
                 memcpy(pValue, "OK", *pLen);
                 Register_State = WAIT_HELLO;
                 BLE_State = IDLES;
+                lock_init = false;
             }
             else
             {
@@ -561,16 +565,17 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
             {
 
 //                srand(time(0));
+                srand(seed);
                 PIN_setOutputValue(SpeakerPinHandle, Board_DIO22, 0);
                 char message[16];
                 unsigned int a[4];
-                a[0] = 666666666;
-                a[1] = 777777777;
-                a[2] = 888888888;
-                a[3] = 987654321;
+//                a[0] = 666666666;
+//                a[1] = 777777777;
+//                a[2] = 888888888;
+//                a[3] = 987654321;
                 for(int i = 0; i < 4; i++)
                 {
-//                    a[i] = rand();
+                    a[i] = rand();
                     for(int j = 0; j < 4; j++)
                     {
                         message[i*4+j] = a[i] % 256;
@@ -643,7 +648,6 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
     uint16_t writeLenMin;
     uint16_t writeLenMax;
     uint16_t *pValueLenVar;
-    static bool shout = true;
 
 //    uint8_t button_values = 0;
     // See if request is regarding a Client Characterisic Configuration
@@ -751,7 +755,7 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
         if(BLE_State == IDLES)
         {
 //            *(pValue + 7) = '\0';
-            if(strncmp(pValue,"fuckyou", 7) == 0)
+            if(strncmp(pValue,"fuckyou", 7) == 0 && lock == true)
             {
                 BLE_State = REGISTER;
                 Register_State = WAIT_BUTTON;
@@ -772,6 +776,12 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
             if (Register_State == WAIT_PASSWORD)
             {
                 memcpy(BLE_PASSWORD, pValue, 16);
+                for(int i = 0 ; i < 8 ; i ++)
+                {
+                    seed = seed << 8 +  pValue[16+i];
+                }
+//                printf(seed);
+//                fflush(stdout);
                 Register_State = RESPONSE_PASSWORD;
             }
         }
@@ -812,7 +822,7 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
             if(Connection_State == WAIT_INSTRUCTION)
             {
 //                char instruction[1];
-//                memcpy(instruction, pValue, 1);
+//                memcpy(instruction, pValue, 1);s
                 if(pValue[0] == '0') /// LOCK
                 {
 
@@ -820,6 +830,8 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
                     {
 
                         ////lock the lock
+//                        MotorPinHandle = PIN_open(&MotorPinState, MotorPinTable);
+
                         PIN_close(MotorPinHandle);
                         lock = false;
                     }
@@ -831,7 +843,7 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
                     }
 
                 }
-                else /// shout
+                else if(pValue[0] == '1')/// shout
                 {
                     ////shout out
                     if (shout)

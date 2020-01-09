@@ -92,6 +92,10 @@ PIN_State MotorPinState;
 extern PIN_Handle MotorPinHandle;
 extern PIN_Config MotorPinTable[];
 extern bool lock;
+extern PIN_Handle SpeakerPinHandle;
+extern PIN_Config SpeakerPinTable[];
+extern bool shout;
+extern bool lock_init;
 //= {
 //    Board_DIO21 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
 //};
