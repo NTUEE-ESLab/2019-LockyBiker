@@ -1,11 +1,11 @@
 # 2019-LockyBiker
 Implemet a convenient and secure bike-lock.
 ## Installation
-ti: 
-git clone -b ti --single-branch https://github.com/NTUEE-ESLab/2019-LockyBiker.git
-use ccs to execute
-android: 
-git clone https://github.com/NTUEE-ESLab/2019-LockyBiker.git
+1.ti: 
+   git clone -b ti --single-branch https://github.com/NTUEE-ESLab/2019-LockyBiker.git
+   use ccs to execute
+2.android: 
+   git clone https://github.com/NTUEE-ESLab/2019-LockyBiker.git
 
 ## Usage
 1. register:
