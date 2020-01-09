@@ -1,18 +1,12 @@
-# 2019-LockyBiker
+# 2019-LockyBiker-lock(Ti)
 Implemet a convenient and secure bike-lock.
 
 ## Installation
-1. ti: 
-   git clone -b ti --single-branch https://github.com/NTUEE-ESLab/2019-LockyBiker.git
-2. android: 
-   git clone https://github.com/NTUEE-ESLab/2019-LockyBiker.git
-
-## Usage
-1. register:
-   use your phone register your bike!
-2. lock:
-   When you walk away from your bike, it will be locked. You can also use your key to lock the bike.
-3. unlock:
-   When you walk through your bike, you can use your key to unlock the bike.
-4. find your bike:
-   If you can't find your bike, just let the lock make some noise so you can find it!
+1. git clone -b ti --single-branch https://github.com/NTUEE-ESLab/2019-LockyBiker.git
+2. install CCS ide 
+3. use CCS ide to execute Ti program
+4. ref:http://esys.ee.ntu.edu.tw/pluginfile.php/384/mod_resource/content/1/CCS%20and%20CC26x2%20SDK%20installation%20guide.pdf
+## Feature
+1. BLE base communication protocal
+2. AES secure encrypted message passing
+3. trigger arduino and buzzer
