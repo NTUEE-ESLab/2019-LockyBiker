@@ -5,21 +5,6 @@ import RPi.GPIO as GPIO
 import struct
 import time
 
-# scanner = Scanner()
-# devices = scanner.scan(6.0)
-# n=0
-# for dev in devices:
-#     for (adtype, desc, value) in dev.getScanData():
-#         if(value == "ProjectRockyou"):
-#             print "%d: Device %s (%s), RSSI=%d dB" % (n, dev.addr,dev.addrType, dev.rssi)
-#             for (adtype,desc,value) in dev.getScanData():
-#                 print " %s = %s" % (desc, value)
-#     n +=1
-# number = input('Enter your device number: ')
-# print('Device', number)
-# print(bytes(devices[number].addr))
-# print "Connecting..."
-
 LOCK_BTNSIGNAL = 100
 SHOUT_BTNSIGNAL = 101
 IDLE_BTNSIGNAL = 102
@@ -34,7 +19,7 @@ def dark():
 def lock(channel):
     global button_state
     if button_state == IDLE_BTNSIGNAL:
-        print('shout')
+        print('lock')
         button_state = LOCK_BTNSIGNAL
 
 
@@ -61,9 +46,44 @@ dark()
 GPIO.add_event_detect(OPEN, GPIO.FALLING, callback=lock, bouncetime=300)
 GPIO.add_event_detect(SHOUT, GPIO.FALLING, callback=shout, bouncetime=300)
 
-lock_addr = open('./mac_addr').read()
-key = open('./key').read()
+GPIO.output(R, True)
+GPIO.output(G, True)
+GPIO.output(B, True)
+time.sleep(0.5)
+dark()
+time.sleep(0.5)
+GPIO.output(R, True)
+GPIO.output(G, True)
+GPIO.output(B, True)
+time.sleep(0.5)
+dark()
+time.sleep(0.5)
+GPIO.output(R, True)
+GPIO.output(G, True)
+GPIO.output(B, True)
+time.sleep(0.5)
+dark()
+
+lock_addr = open('/home/jeopardy/final_project/mac_addr').read()
+key = open('/home/jeopardy/final_project/key').read()
 aes = AES.new(key, AES.MODE_ECB)
+
+time.sleep(0.5)
+GPIO.output(R, True)
+GPIO.output(G, True)
+GPIO.output(B, True)
+time.sleep(0.5)
+dark()
+
+scanner = Scanner()
+devices = scanner.scan(1.0)
+
+time.sleep(0.5)
+GPIO.output(R, True)
+GPIO.output(G, True)
+GPIO.output(B, True)
+time.sleep(0.5)
+dark()
 
 while True:
     try:
@@ -103,13 +123,17 @@ while True:
         GPIO.output(G, True)
         button_state = IDLE_BTNSIGNAL
         while button_state == IDLE_BTNSIGNAL:
+            if dev.getState() == 'disc':
+                raise Exception('disconnected.')
             pass
 
         if button_state == SHOUT_BTNSIGNAL:
             ch.write('1')
+            dark()
             GPIO.output(R, True)
         elif button_state == LOCK_BTNSIGNAL:
             ch.write('0')
+            dark()
             GPIO.output(B, True)
 
         response = ch.read()
@@ -143,6 +167,8 @@ while True:
         except:
             pass
         button_state = NOTYET_SIGNAL
-        time.sleep(0.5)
+        time.sleep(1.6)
+        GPIO.output(R, True)
+        time.sleep(0.4)
         dark()
         # a = raw_input()
