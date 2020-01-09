@@ -1,6 +1,6 @@
 <snippet>
-  <content><![CDATA[
-# ${1:2019-LockyBiker}
+  <content><
+# 2019-LockyBiker
 Implemet a convenient and secure bike-lock.
 ## Installation
 ti: 
@@ -18,7 +18,6 @@ git clone https://github.com/NTUEE-ESLab/2019-LockyBiker.git
    When you walk through your bike, it  will be unlocked. You can also use botton to unlock the bike.
 4. find your bike:
    If you can't find your bike, you can press botton, the bike will make noise to let you know where it is!
-## Credits
-]]></content>
+></content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
