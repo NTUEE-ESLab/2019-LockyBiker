@@ -1,23 +1,18 @@
 package com.chris.user.mybikelock;
 
-import android.app.AlertDialog;
-import android.app.UiModeManager;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
-import android.bluetooth.BluetoothGattDescriptor;
 import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothProfile;
 import android.bluetooth.le.BluetoothLeScanner;
 import android.bluetooth.le.ScanCallback;
 import android.bluetooth.le.ScanResult;
-import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,14 +23,13 @@ import android.widget.Toast;
 import android.Manifest;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.Semaphore;
 
 public class LockScan extends AppCompatActivity {
 
-    //private TextView textView;
     private ListView BLEs;
     private ArrayList<String> deviceName;
     private ArrayList<BluetoothDevice> deviceList;
@@ -112,7 +106,7 @@ public class LockScan extends AppCompatActivity {
         public void onScanResult(int callbackType, ScanResult result)
         {
             BluetoothDevice d = result.getDevice();
-            if (!deviceList.contains(d))
+            if (!deviceList.contains(d) && d.getName() != null)
             {
                 deviceList.add(d);
                 deviceName.add(d.getName() + " : " + d.getAddress());
@@ -142,7 +136,7 @@ public class LockScan extends AppCompatActivity {
             try
             {
                 BluetoothGatt gatt = device.connectGatt(LockScan.this, false,
-                        new GattCallBack());
+                        new GattCallBack(device.getAddress()));
                 gatt.connect();
                 stopScan(null);
             }
@@ -155,7 +149,10 @@ public class LockScan extends AppCompatActivity {
 
     class GattCallBack extends BluetoothGattCallback {
         private Semaphore semaphore = new Semaphore(1);
-        private byte[] input = {0}, output;
+        private byte[] output;
+        final String MAC;
+
+        GattCallBack(String MAC) { this.MAC = MAC; }
 
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, final int status, int newState) {
@@ -207,8 +204,12 @@ public class LockScan extends AppCompatActivity {
                                     throw new Exception("unknown response : " + in);
                                 }
 
+                                Random rand = new Random();
                                 String password = PasswordManager.getInstance(null).getPassword();
-                                write(gatt, ch, password + password.substring(0,16 - password.length()));
+                                password += password.substring(0, 16 - password.length());
+                                String seed = Long.toBinaryString(rand.nextLong());
+
+                                write(gatt, ch, password + seed);
 
                                 in = read(gatt, ch);
                                 if(!in.equals("OK"))
@@ -216,6 +217,9 @@ public class LockScan extends AppCompatActivity {
                                     throw new Exception("unknown response : " + in);
                                 }
                                 show("successful lock initialization");
+                                LockScan.this.getSharedPreferences("mybikelock", MODE_PRIVATE).edit()
+                                        .putString("MAC", MAC)
+                                        .apply();
                             }
                             catch (final Exception ex) {
                                 show(ex.getMessage());
@@ -257,7 +261,6 @@ public class LockScan extends AppCompatActivity {
             if (status != BluetoothGatt.GATT_SUCCESS) {
                 gatt.readCharacteristic(characteristic);
             } else {
-                input = characteristic.getValue();
                 semaphore.release();
             }
         }
