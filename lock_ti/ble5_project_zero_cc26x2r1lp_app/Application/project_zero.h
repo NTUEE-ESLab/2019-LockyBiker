@@ -78,13 +78,13 @@ enum lock { LOCK, UNLOCK };
 enum reg { WAIT_HELLO, CALL_BUTTON, WAIT_BUTTON, RESPONSE_HELLO, WAIT_PASSWORD, RESPONSE_PASSWORD };
 enum con { WAIT_HELLO_C, SEND_CIPHER, WAIT_GUESS, SEND_ACK, SEND_NAK, WAIT_INSTRUCTION, RESPONSE_INSTRUCTION };
 enum bles { IDLES, REGISTER, CONNECTION };
-volatile char BLE_PASSWORD[16];
-volatile enum bles BLE_State;
-volatile enum lock Lock_State;
-volatile enum reg Register_State;
-volatile enum con Connection_State;
-PIN_State SpeakerPinState;
-PIN_State MotorPinState;
+volatile extern char BLE_PASSWORD[16];
+volatile extern enum bles BLE_State;
+volatile extern enum lock Lock_State;
+volatile extern enum reg Register_State;
+volatile extern enum con Connection_State;
+extern PIN_State SpeakerPinState;
+extern PIN_State MotorPinState;
 //PIN_Handle SpeakerPinHandle;
 //PIN_Config SpeakerPinTable[] = {
 //    Board_DIO22 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE

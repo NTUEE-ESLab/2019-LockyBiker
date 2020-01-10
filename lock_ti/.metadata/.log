@@ -2168,3 +2168,740 @@ directory of your installation. View the ReadMe.txt file there
 for instructions.
 (Emulation package 8.2.0.00004)
 
+!SESSION 2020-01-10 06:47:40.707 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-01-10 06:48:02.811
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 06:48:02.883
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 06:48:02.884
+!MESSAGE debugServerDir=/home/ntuee/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 06:48:12.228
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 06:48:12.261
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 06:48:12.261
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-01-10 06:48:13.041
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: /home/ntuee/ti/ccs910/ccs
+	Workspace location: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti (previously: /home/ntuee/Lock_CC26X2R1/lock_ti)
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.599
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.600
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.600
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.604
+!MESSAGE Platform os: linux
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.604
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.605
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.606
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.613
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 06:48:13.639
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:33:10.762
+!MESSAGE DS_ERROR: Warning:
+A firmware update is required for the debug probe. Click the "Update" button to update the firmware and connect to the debug target.
+DO NOT UNPLUG THE DEBUG PROBE DURING THE UPDATE.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:33:11.026
+!MESSAGE DS_ERROR: Warning:
+A firmware update is required for the debug probe. Click the "Update" button to update the firmware and connect to the debug target.
+DO NOT UNPLUG THE DEBUG PROBE DURING THE UPDATE.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:33:22.632
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -1170 @ 0x0) Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK). (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:33:22.653
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -1170 @ 0x0)
+Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK).
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:58:04.017
+!MESSAGE DS_ERROR: CS_DAP_0: Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:58:04.327
+!MESSAGE DS_ERROR: CS_DAP_0: Unable to determine target status after 20 attempts
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:58:04.346
+!MESSAGE DS_ERROR: CS_DAP_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:58:08.365
+!MESSAGE DS_ERROR: Cortex_M4_0: JTAG Communication Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 07:58:08.395
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:31:38.378
+!MESSAGE DS_ERROR: Warning:
+A firmware update is required for the debug probe. Click the "Update" button to update the firmware and connect to the debug target.
+DO NOT UNPLUG THE DEBUG PROBE DURING THE UPDATE.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:31:38.535
+!MESSAGE DS_ERROR: Warning:
+A firmware update is required for the debug probe. Click the "Update" button to update the firmware and connect to the debug target.
+DO NOT UNPLUG THE DEBUG PROBE DURING THE UPDATE.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:31:48.204
+!MESSAGE DS_ERROR: CS_DAP_0: Error connecting to the target: (Error -1170 @ 0x0) Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK). (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:31:48.222
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -1170 @ 0x0)
+Unable to access the DAP. Reset the device, and retry the operation. If error persists, confirm configuration, power-cycle the board, and/or try more reliable JTAG settings (e.g. lower TCLK).
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:35:29.349
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the ReadMe.txt file there for instructions. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:35:29.396
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the ReadMe.txt file there for instructions. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:35:29.417
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the ReadMe.txt file there
+for instructions.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:35:33.175
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the ReadMe.txt file there for instructions. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:35:33.188
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the ReadMe.txt file there
+for instructions.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:35:45.301
+!MESSAGE DS_ERROR: Cortex_M4_0: Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:35:51.365
+!MESSAGE DS_ERROR: CS_DAP_0: Error: (Error -215 @ 0x0) The semaphore for the test bus controller is in a time-out state. Unified-SCIF was unable to acquire the semaphore used to express ownership of a controller by a utility or debugger. You may have to exit other clients because the timeout occurred. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:36:09.501
+!MESSAGE DS_ERROR: CS_DAP_0: Unable to determine target status after 20 attempts
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:36:10.115
+!MESSAGE DS_ERROR: CS_DAP_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:36:13.446
+!MESSAGE DS_ERROR: Cortex_M4_0: JTAG Communication Error: (Error -215 @ 0x0) The semaphore for the test bus controller is in a time-out state. Unified-SCIF was unable to acquire the semaphore used to express ownership of a controller by a utility or debugger. You may have to exit other clients because the timeout occurred. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:36:14.086
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:51:29.068
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:51:29.123
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:51:29.137
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:51:31.721
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 14:51:31.730
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+!SESSION 2020-01-10 15:19:19.335 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 15:19:35.658
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 15:19:35.659
+!MESSAGE debugServerDir=/home/ntuee/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:19:44.260
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:19:44.282
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:19:44.283
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-01-10 15:19:45.125
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: /home/ntuee/ti/ccs910/ccs
+	Workspace location: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.629
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.630
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.642
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.649
+!MESSAGE Platform os: linux
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.650
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.651
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.664
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.665
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:19:45.672
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:20:10.532
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the ReadMe.txt file there for instructions. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:20:10.884
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the ReadMe.txt file there for instructions. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:20:10.936
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the ReadMe.txt file there
+for instructions.
+(Emulation package 8.2.0.00004)
+
+!SESSION 2020-01-10 15:33:15.126 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 15:33:28.373
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 15:33:28.374
+!MESSAGE debugServerDir=/home/ntuee/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:33:36.697
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:33:36.721
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:33:36.724
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-01-10 15:33:37.623
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: /home/ntuee/ti/ccs910/ccs
+	Workspace location: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.037
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.038
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.038
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.066
+!MESSAGE Platform os: linux
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.067
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.068
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.069
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.070
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:33:38.098
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:38:39.341
+!MESSAGE DS_ERROR: Cortex_M4_0: Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:38:39.732
+!MESSAGE DS_ERROR: Cortex_M4_0: Error: (Error -215 @ 0x0) The semaphore for the test bus controller is in a time-out state. Unified-SCIF was unable to acquire the semaphore used to express ownership of a controller by a utility or debugger. You may have to exit other clients because the timeout occurred. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:38:44.919
+!MESSAGE DS_ERROR: CS_DAP_0: Error: (Error -215 @ 0x0) The semaphore for the test bus controller is in a time-out state. Unified-SCIF was unable to acquire the semaphore used to express ownership of a controller by a utility or debugger. You may have to exit other clients because the timeout occurred. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:38:53.028
+!MESSAGE DS_ERROR: Cortex_M4_0: Unable to determine target status after 20 attempts
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:38:53.344
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:38:54.263
+!MESSAGE DS_ERROR: CS_DAP_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:19.867
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:19.951
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:19.981
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:23.836
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:23.891
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:56.276
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:56.332
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:56.372
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:58.216
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:58.273
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:58.725
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:58.787
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:59.266
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:59.318
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:59.730
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:42:59.760
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:00.100
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:00.138
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:13.080
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:13.140
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:13.176
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:24.755
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:24.817
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:24.839
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:41.993
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:42.077
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:42.089
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:48.081
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:48.090
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:48.527
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:48.580
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:48.861
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:48.911
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:49.150
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:49.198
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:49.509
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:43:49.556
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:44:18.928
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:44:18.978
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:44:19.003
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -261 @ 0x0)
+Invalid response was received from the XDS110.
+(Emulation package 8.2.0.00004)
+
+!SESSION 2020-01-10 15:44:24.806 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 15:44:27.677
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 15:44:27.678
+!MESSAGE debugServerDir=/home/ntuee/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:44:35.941
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:44:35.967
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 15:44:35.967
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-01-10 15:44:36.930
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: /home/ntuee/ti/ccs910/ccs
+	Workspace location: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.292
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.292
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.293
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.293
+!MESSAGE Platform os: linux
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.293
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.314
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.315
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.315
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 15:44:37.331
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:45:10.781
+!MESSAGE DS_ERROR: CS_DAP_0: Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:45:11.013
+!MESSAGE DS_ERROR: CS_DAP_0: Unable to determine target status after 20 attempts
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:45:11.031
+!MESSAGE DS_ERROR: CS_DAP_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:45:11.219
+!MESSAGE DS_ERROR: Cortex_M4_0: JTAG Communication Error: (Error -261 @ 0x0) Invalid response was received from the XDS110. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:45:11.220
+!MESSAGE DS_ERROR: Cortex_M4_0: Breakpoint Manager: Remove job failed: Register/memory write failure[22005]
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 15:45:11.251
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+!SESSION 2020-01-10 16:02:29.897 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 16:02:42.346
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2020-01-10 16:02:42.348
+!MESSAGE debugServerDir=/home/ntuee/ti/ccs910/ccs/ccs_base/DebugServer
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 16:02:50.339
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 16:02:50.358
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2020-01-10 16:02:50.359
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.ti.ccstudio.ui 1 0 2020-01-10 16:02:50.889
+!MESSAGE CCS IDE session started!
+	CCS build: 9.1.0.00010
+	CCS location: /home/ntuee/ti/ccs910/ccs
+	Workspace location: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.367
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.367
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.367
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.368
+!MESSAGE Platform os: linux
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.368
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.379
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.384
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.385
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2020-01-10 16:02:51.391
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 16:04:59.608
+!MESSAGE DS_ERROR: Cortex_M4_0: Failed Board Reset: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the ReadMe.txt file there for instructions. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 16:04:59.884
+!MESSAGE DS_ERROR: IcePick_C: Error connecting to the target: (Error -260 @ 0x0) An attempt to connect to the XDS110 failed. The cause may be one or more of: no XDS110 is connected, invalid firmware update, invalid XDS110 serial number, or faulty USB cable. The firmware and serial number may be updated using the xdsdfu utility found in the .../ccs_base/common/uscif/xds110 directory of your installation. View the ReadMe.txt file there for instructions. (Emulation package 8.2.0.00004) 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2020-01-10 16:04:59.909
+!MESSAGE DS_ERROR: Error connecting to the target:
+(Error -260 @ 0x0)
+An attempt to connect to the XDS110 failed.
+The cause may be one or more of: no XDS110 is connected, invalid
+firmware update, invalid XDS110 serial number, or faulty USB
+cable. The firmware and serial number may be updated using the
+xdsdfu utility found in the .../ccs_base/common/uscif/xds110
+directory of your installation. View the ReadMe.txt file there
+for instructions.
+(Emulation package 8.2.0.00004)
+

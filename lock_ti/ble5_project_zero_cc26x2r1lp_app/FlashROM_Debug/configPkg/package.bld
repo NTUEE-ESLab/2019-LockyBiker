@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: '/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg',
+        cfgScript: '/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/ble_debug.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../TOOLS/ble_debug.cfg',
-    outputPath: '/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg',
+    outputPath: '/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg',
     exeName:    'ble_debug' + suffix,
     exeIntName: 'ble_debug' + suffix.replace('.', '_'),
     targ:       targ,

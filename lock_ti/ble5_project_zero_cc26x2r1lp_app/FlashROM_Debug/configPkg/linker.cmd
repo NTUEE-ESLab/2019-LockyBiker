@@ -9,10 +9,10 @@
  */
 
 
--l"/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f.oem4f"
+-l"/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/package/cfg/ble_debug_pem4f.oem4f"
 -l"/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/uia/sysbios/lib/release/ti.uia.sysbios.aem4f"
 -l"/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/uia/loggers/lib/release/ti.uia.loggers.aem4f"
--l"/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/src/sysbios/sysbios.aem4f"
+-l"/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/TOOLS/src/sysbios/sysbios.aem4f"
 -l"/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/uia/services/lib/release/ti.uia.services.aem4f"
 -l"/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/uia/runtime/lib/release/ti.uia.runtime.aem4f"
 -l"/home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/uia/events/lib/release/ti.uia.events.aem4f"

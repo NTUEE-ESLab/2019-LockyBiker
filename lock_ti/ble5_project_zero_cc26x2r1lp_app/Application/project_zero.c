@@ -92,6 +92,7 @@
 #include <project_zero.h>
 #include <util.h>
 #include "gap.h"
+#include <stdio.h>
 /*********************************************************************
  * MACROS
  */
@@ -913,6 +914,7 @@ static void ProjectZero_taskFxn(UArg a0, UArg a1)
 
             if(!lock_init)
             {
+
                 PIN_close(MotorPinHandle);
                 lock = false;
             }

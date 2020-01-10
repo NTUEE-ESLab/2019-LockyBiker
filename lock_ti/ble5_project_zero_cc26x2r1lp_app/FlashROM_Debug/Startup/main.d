@@ -171,11 +171,11 @@ Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/bcomdef.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/osal/src/inc/comdef.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h
-Startup/main.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h
+Startup/main.obj: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/knl/Queue.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/drivers/PIN.h
-Startup/main.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h
-Startup/main.obj: /home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/CC26X2R1_LAUNCHXL.h
+Startup/main.obj: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h
+Startup/main.obj: /home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/CC26X2R1_LAUNCHXL.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/ioc.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_ioc.h
 Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h
@@ -384,11 +384,11 @@ Startup/main.obj: /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/inc/bcomdef.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/osal/src/inc/comdef.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/ble5stack/hal/src/target/_common/hal_types.h: 
-/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h: 
+/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/Application/project_zero.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/kernel/tirtos/packages/ti/sysbios/knl/Queue.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/drivers/PIN.h: 
-/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h: 
-/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/CC26X2R1_LAUNCHXL.h: 
+/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/Board.h: 
+/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/Startup/CC26X2R1_LAUNCHXL.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/ioc.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/../inc/hw_ioc.h: 
 /home/ntuee/ti/simplelink_cc26x2_sdk_2_30_00_34/source/ti/devices/cc13x2_cc26x2_v1/driverlib/gpio.h: 

@@ -80,11 +80,11 @@
  * GLOBAL VARIABLES
  */
 
-volatile extern enum bles BLE_State;
-volatile extern enum reg Register_State;
-volatile extern enum con Connection_State;
-volatile extern enum lock Lock_State;
-volatile extern char BLE_PASSWORD[16];
+volatile enum bles BLE_State;
+volatile enum reg Register_State;
+volatile enum con Connection_State;
+volatile enum lock Lock_State;
+volatile char BLE_PASSWORD[16];
 bool lock_init;
 bool lock;
 bool shout;
@@ -99,10 +99,8 @@ PIN_Handle SpeakerPinHandle;
 PIN_Config SpeakerPinTable[] = {
     Board_DIO15 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
 };
-//PIN_Handle MotorPinHandle;
-//PIN_Config MotorPinTable[] = {
-//    Board_DIO21 | PIN_INPUT_EN | PIN_PULLUP | PIN_IRQ_NEGEDGE,PIN_TERMINATE
-//};
+PIN_State SpeakerPinState;
+PIN_State MotorPinState;
 
 
 
@@ -563,16 +561,9 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
         {
             if( Connection_State == SEND_CIPHER )
             {
-
-//                srand(time(0));
                 srand(seed);
-                PIN_setOutputValue(SpeakerPinHandle, Board_DIO22, 0);
                 char message[16];
                 unsigned int a[4];
-//                a[0] = 666666666;
-//                a[1] = 777777777;
-//                a[2] = 888888888;
-//                a[3] = 987654321;
                 for(int i = 0; i < 4; i++)
                 {
                     a[i] = rand();
@@ -584,7 +575,7 @@ static bStatus_t Data_Service_ReadAttrCB(uint16_t connHandle,
                     }
 
                 }
-                memcpy(BLE_PASSWORD, "aaaaaaaaaaaaaaaa", 16);
+//                memcpy(BLE_PASSWORD, "aaaaaaaaaaaaaaaa", 16);
                 encrypt(message, BLE_PASSWORD);
                 *pLen = 16;
                 memcpy(pValue, message, *pLen);
@@ -780,8 +771,6 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
                 {
                     seed = seed << 8 +  pValue[16+i];
                 }
-//                printf(seed);
-//                fflush(stdout);
                 Register_State = RESPONSE_PASSWORD;
             }
         }
@@ -821,17 +810,11 @@ static bStatus_t Data_Service_WriteAttrCB(uint16_t connHandle,
             }
             if(Connection_State == WAIT_INSTRUCTION)
             {
-//                char instruction[1];
-//                memcpy(instruction, pValue, 1);s
                 if(pValue[0] == '0') /// LOCK
                 {
 
                     if (lock)
                     {
-
-                        ////lock the lock
-//                        MotorPinHandle = PIN_open(&MotorPinState, MotorPinTable);
-
                         PIN_close(MotorPinHandle);
                         lock = false;
                     }

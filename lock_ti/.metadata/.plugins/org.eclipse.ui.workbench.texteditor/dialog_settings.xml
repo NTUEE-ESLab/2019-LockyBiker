@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="init" key="selection"/>
+		<item value="extern" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="extern"/>
+			<item value="lock_in"/>
+			<item value="lock_tax"/>
+			<item value="lock_init"/>
+			<item value="projectzero_init"/>
 			<item value="init"/>
 			<item value="Motor"/>
 			<item value="ProjectZero_t"/>
@@ -18,19 +23,14 @@
 			<item value="icall_ble_api.h"/>
 			<item value="GAP_NumActiveConnections"/>
 			<item value="gap_num"/>
-			<item value="BLE"/>
-			<item value="for"/>
-			<item value="while"/>
-			<item value="SpeakerPinState"/>
-			<item value="strcmp"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="314" key="DIALOG_WIDTH"/>
+		<item value="294" key="DIALOG_WIDTH"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="470" key="DIALOG_HEIGHT"/>
+		<item value="478" key="DIALOG_HEIGHT"/>
 		<item value="1512" key="DIALOG_X_ORIGIN"/>
 		<item value="138" key="DIALOG_Y_ORIGIN"/>
 	</section>

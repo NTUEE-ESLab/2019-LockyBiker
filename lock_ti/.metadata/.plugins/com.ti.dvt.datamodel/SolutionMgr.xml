@@ -5,7 +5,7 @@
    <string>defaultSolution</string>
    <void method="set">
     <object idref="SolutionManager$PersistState0"/>
-    <string>/home/ntuee/Lock_CC26X2R1/lock_ti/dvt/AnalysisSolutionsTemp/AnalysisSolution1578039179067/null</string>
+    <string>/home/ntuee/ti/ccs910/ccs/ccs_base/dvt_4.1.0.201905081124/CodeGen/solutions/CodeGenCoverage</string>
    </void>
   </void>
  </object>
@@ -14,10 +14,10 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-   <string>/home/ntuee/ti/ccs910/ccs/ccs_base/dvt_4.1.0.201905081124/CodeGen/solutions/CodeGenCoverage</string>
+   <string>/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/dvt/AnalysisSolutionsTemp/AnalysisSolution1578642278574/null</string>
   </void>
   <void method="add">
-   <string>/home/ntuee/Lock_CC26X2R1/lock_ti/dvt/AnalysisSolutionsTemp/AnalysisSolution1578039179067/null</string>
+   <string>/home/ntuee/ti/ccs910/ccs/ccs_base/dvt_4.1.0.201905081124/CodeGen/solutions/CodeGenCoverage</string>
   </void>
  </void>
 </void>

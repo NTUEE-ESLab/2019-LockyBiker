@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/ble_debug_pem4f.xdl
-	$(SED) 's"^\"\(package/cfg/ble_debug_pem4fcfg.cmd\)\"$""\"/home/ntuee/Lock_CC26X2R1/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/\1\""' package/cfg/ble_debug_pem4f.xdl > $@
+	$(SED) 's"^\"\(package/cfg/ble_debug_pem4fcfg.cmd\)\"$""\"/home/ntuee/2019-LockyBiker/2019-LockyBiker/lock_ti/ble5_project_zero_cc26x2r1lp_app/FlashROM_Debug/configPkg/\1\""' package/cfg/ble_debug_pem4f.xdl > $@
 	-$(SETDATE) -r:max package/cfg/ble_debug_pem4f.h compiler.opt compiler.opt.defs
