@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## 2019-LockyBiker
 
-You can use the [editor on GitHub](https://github.com/NTUEE-ESLab/2019-LockyBiker/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Are you always tired of finding your bike? Did you ever give up locking your bike because of incovenient process?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Well then, LockyBiker is the best bike lock ever for you!
+We implemet a convenient and secure bike-lock, where users can lock/unlock their bikes remotely, and find their bikes when they disappear in the "bike ocean".
 
-### Markdown
+### requirements
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+LockyBiker is made up of three parts. 
 
-```markdown
-Syntax highlighted code block
+1. wireless key
+We use Raspberry Pi 3 to build our wireless key. On RPi, we run a BLE central to scan the bike lock and deliver commands. One LED and three buttons are also needed for our program.
+2. bike lock
+We use ti development board to build our wireless bike lock. On RPi, we run a BLE peripheral to deal with the commands sent from the key and conrtrols the motor to lock/unlock the bike.
+3. android cellphone
+We use android app to authenticate user and initialize passwords of bike lock and key. Therefore, once you loose you key accidently, you can make a new key and register your password onto it to unlock your bike.
 
-# Header 1
-## Header 2
-### Header 3
+### usage
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NTUEE-ESLab/2019-LockyBiker/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. register: use your phone register your lock. you can choose your own password for authentication.
+2. lock: When you walk away from your bike, it will be locked. You can also use your key to lock the bike.
+3. unlock: When you walk through your bike, you can use your key to unlock the bike.
+4. find your bike: If you can't find your bike, just let the lock make some noise so you can find it!
