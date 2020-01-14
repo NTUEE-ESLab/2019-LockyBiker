@@ -22,3 +22,5 @@ We use android app to authenticate user and initialize passwords of bike lock an
 2. lock: When you walk away from your bike, it will be locked. You can also use your key to lock the bike.
 3. unlock: When you walk through your bike, you can use your key to unlock the bike.
 4. find your bike: If you can't find your bike, just let the lock make some noise so you can find it!
+### video link
+https://drive.google.com/open?id=1dlnSVoTI82TCObzH15urG_eBVxj7wtqH
